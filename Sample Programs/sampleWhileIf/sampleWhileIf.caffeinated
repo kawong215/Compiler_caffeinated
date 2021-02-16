@@ -1,0 +1,39 @@
+CUSTOMER sampleWhileIf;
+
+TOPPINGS
+    i, j : boba; // int
+    price : ice; // float 
+    abc : sweet;  // char
+    
+END_TOPPINGS // end variable declarations
+    
+ORDER
+    i = 2;
+    RECEIPT ('i = %d\n', i);
+    abc = 'a'; 
+    
+    j = i;
+    i = 2 + j;
+    RECEIPT ('i = %d, j = %d\n', i, j); // use %d for int
+    RECEIPT ('abc = %c\n', abc); 		// use %c for char
+    
+    price = 0.00;
+    
+    RECEIPT ('price = $%.2f\n', price);	// use %f for float; 
+    									// .2 for 2 decimal place precision
+    
+     MILK(i > j) THEN(
+     	i = 3;
+    	RECEIPT ('i = %d\n', i);
+    );
+    
+    BREW (
+    	i = i + 1;
+    	RECEIPT ('i = %d\n', i);
+    ) WHILE (i != 7);
+    
+    
+   
+    
+
+PICKUP.

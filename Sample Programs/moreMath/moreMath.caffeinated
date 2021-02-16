@@ -1,0 +1,15 @@
+CUSTOMER moreMath;
+
+TOPPINGS
+	i, j, k : ice; // float
+	
+END_TOPPINGS    	// end variable declarations
+
+ORDER
+   i = 2.0;
+   j = 5.0;
+   k = i + j * 10.0 / 2.5;
+   
+RECEIPT ('k = %.2f', k);
+
+PICKUP.

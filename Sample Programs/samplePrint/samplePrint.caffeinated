@@ -1,0 +1,27 @@
+CUSTOMER samplePrint;
+
+TOPPINGS
+    number : boba;  // int
+    letter : sweet; // char
+    
+END_TOPPINGS // end variable declarations
+    
+ORDER
+    number = 10;
+    RECEIPT ('number = %d\n', number);
+    letter = 'x'; 
+    
+    BREW (
+    	number = number + 1;
+    	RECEIPT ('number = %d\n', number);
+    ) WHILE (number < 12);
+    
+     MILK(number == 12) THEN(
+     	letter = 'h';
+    	RECEIPT ('letters = %c', letter);
+    	letter = 'i';
+    	RECEIPT ('%c\n', letter);
+    	// two receipts should print: letters = hi
+    );
+
+PICKUP.

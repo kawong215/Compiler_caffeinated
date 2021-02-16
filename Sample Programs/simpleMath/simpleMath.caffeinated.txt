@@ -1,0 +1,12 @@
+CUSTOMER simpleMath;
+TOPPINGS
+	i, j : boba; 	// int
+	k : ice; 		// float
+END_TOPPINGS    	// end variable declarations
+ORDER
+   i = 2;
+   j = 5;
+   i = i + j;
+   k = 7.6 - 1.5;
+RECEIPT ('k = $%.1f', k);
+PICKUP.

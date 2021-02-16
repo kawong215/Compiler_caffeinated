@@ -1,0 +1,18 @@
+CUSTOMER count;
+
+TOPPINGS
+    i : boba; // int
+    
+END_TOPPINGS // end variable declarations
+    
+ORDER
+    i = 0; 
+    
+    BREW 
+    (   	
+    	RECEIPT ('i = %d\n', i);
+    	i = i + 1;
+    ) WHILE (i < 11)
+
+
+PICKUP.

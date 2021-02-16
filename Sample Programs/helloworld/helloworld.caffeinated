@@ -1,0 +1,35 @@
+CUSTOMER HelloWorld;
+
+TOPPINGS
+    letter : sweet; // char
+    
+END_TOPPINGS // end variable declarations
+    
+ORDER
+    RECEIPT ('This program prints: Hello World\n');
+    letter = 'H';
+    RECEIPT ('%c', letter);
+    letter = 'e';
+    RECEIPT ('%c', letter);
+    letter = 'l';
+    RECEIPT ('%c', letter);
+    letter = 'l';
+    RECEIPT ('%c', letter);
+    letter = 'o';
+    RECEIPT ('%c', letter);
+
+    RECEIPT (' ');
+    
+    letter = 'W';
+    RECEIPT ('%c', letter);
+    letter = 'o';
+    RECEIPT ('%c', letter);
+    letter = 'r';
+    RECEIPT ('%c', letter);
+    letter = 'l';
+    RECEIPT ('%c', letter);
+    letter = 'd';
+    RECEIPT ('%c\n', letter);
+
+
+PICKUP.
